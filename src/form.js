@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import axios from 'axios'
+import './App.css'
 
 import validator from 'validator'
 import { Formik } from 'formik';
@@ -71,7 +72,7 @@ const Form =(props)=>{
                            </select>{errors.jobTitle && touched.jobTitle && <p>{errors.jobTitle}</p>}<br/>
                            <label >Skills : </label>
                            <input type ="text" name={"skills"} value={values.skills} onChange={handleChange} onBlur={handleBlur} placeholder={"HTML,CSS,Javascript"}/>{errors.skills && touched.skills && <p>{errors.skills}</p>}<br/>
-                           <button type={"submit"}>submit</button>
+                           <button className="Button"type={"submit"}>submit</button>
                        </div>
 
                    </form>
