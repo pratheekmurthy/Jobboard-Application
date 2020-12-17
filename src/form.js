@@ -36,7 +36,8 @@ const Form =(props)=>{
        }}
  validationSchema ={formSchema}
        
-       onSubmit={(data)=> formSubmit(data) }>
+       onSubmit={(data,onSubmitProps)=> {formSubmit(data) 
+       onSubmitProps.resetForm()} }>
            {({
                handleSubmit,
                handleChange,
@@ -107,22 +108,3 @@ const Form =(props)=>{
 }
 
 export default Form
-
-
-{/* <label>Full Name</label> - <input type="text" value={name} onChange={handleName}/> {formErrors.name && <span> { formErrors.name } </span>}<br/>
-<br/><label>Email Address</label> - <input type="text" placeholder="example@gmail.com" value={email} onChange={handleEmail}/> {formErrors.email && <span> { formErrors.email } </span>}<br/>
-<br/><label>Contact Number</label> - <input type="text" placeholder="+91 9972387689" value={phone} onChange={handlePhone}/>{formErrors.phone && <span> { formErrors.phone } </span>}<br/>
-<br/><label>Experience</label> - <input type="text" placeholder="2 years 3 months" value={exp} onChange={handleexp}/>{formErrors.exp && <span> { formErrors.exp } </span>}<br/>
-<br/><label>Applying for Job</label> -
-<select value={job}  onChange={handledropdown}>
-<option value="">----Select-----</option>
-<option value="Front-End Developer">Front-End Developer</option>
-<option value="Node.js Developer">Node js Developer</option>
-<option value="MEAN Stack Developer">MEAN Stack Developer</option>
-<option value="FULL Stack Developer">FULL Stack Developer</option>
-</select>{formErrors.job && <span> { formErrors.job } </span>} <br/>
-<br/><label>Technical Skills</label> - <textarea  value={skills} onChange={handleSkill}/>{formErrors.skills && <span> { formErrors.skills } </span>}<br/> */}
-
-
-
-

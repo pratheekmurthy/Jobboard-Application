@@ -12,7 +12,7 @@ const formSubmit=(data)=>{
         .then((response)=>{
             const result = response.data;
             console.log(result); 
-            window.location.reload();
+            // window.location.reload();
         })
         .catch((err)=>{
             console.log(err.message);
