@@ -19,3 +19,9 @@
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
 }
+
+.carousel {
+  width:900px;
+  height:500px;
+  margin: auto;
+}
