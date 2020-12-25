@@ -3,12 +3,12 @@ import {Link } from 'react-router-dom'
 import "./App.css"
 import Carousel from 'react-bootstrap/Carousel'
 
+document.body.style = 'background-color: #ff0080';
 
 const Homepage =(props)=>{
     
     return (<div>
-      <h1></h1>
-      <Carousel >
+      <Carousel className="carousel">
   <Carousel.Item >
   {/* <span aria-hidden="false" className="carousel-control-next-icon" /> */}
     <img

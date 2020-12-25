@@ -52,7 +52,7 @@ const Form =(props)=>{
                return( <div >
                    <div class="font">
                    <div class="col d-flex justify-content-center" >
-                <div class="card" style={{width: "30rem", height:"35rem" }}>
+                <div class="card" style={{width: "30rem", height:"25rem" , position :"absolute" ,left:"500px" ,top: "100px" }}>
                 <div class="card-body">
                 <form onSubmit ={handleSubmit}>
                     <tabel>
