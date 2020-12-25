@@ -4,6 +4,7 @@ import axios from 'axios'
 import Admin from './Admin'
 
 const Apply =(props)=>{
+    document.body.style = 'background-color: #ff0080';
 
 
 const formSubmit=(data)=>{

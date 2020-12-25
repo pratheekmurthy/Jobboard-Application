@@ -52,7 +52,7 @@ const Form =(props)=>{
                return( <div >
                    <div class="font">
                    <div class="col d-flex justify-content-center" >
-                <div class="card" style={{width: "30rem", height:"25rem" , position :"absolute" ,left:"500px" ,top: "100px" }}>
+                <div class="card" style={{width: "25rem", height:"20rem" , position :"absolute" ,left:"500px" ,top: "100px" }}>
                 <div class="card-body">
                 <form onSubmit ={handleSubmit}>
                     <tabel>
@@ -75,8 +75,8 @@ const Form =(props)=>{
                             </tr>
                             <tr>
                                 <td><label>Applying for Job : </label></td>
-                                <td> <select name={"jobTitle"} value={values.jobTitle} onChange={handleChange} onBlur={handleBlur} >
-                                <option value="">select Job</option>
+                                <td> <select className="font" name={"jobTitle"} value={values.jobTitle} onChange={handleChange} onBlur={handleBlur} >
+                                <option value="" >select Job </option>
                                <option value="Front-End Developer"> Front-End Developer</option>
                                <option value="Node.js Developer"> Node js Developer</option>
                                <option value="MEAN Stack Developer"> MEAN Stack Developer</option>

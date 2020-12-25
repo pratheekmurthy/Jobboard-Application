@@ -3,9 +3,10 @@ import {Link } from 'react-router-dom'
 import "./App.css"
 import Carousel from 'react-bootstrap/Carousel'
 
-document.body.style = 'background-color: #ff0080';
+
 
 const Homepage =(props)=>{
+  document.body.style = 'background-color: #ff0080';
     
     return (<div>
       <Carousel className="carousel">
